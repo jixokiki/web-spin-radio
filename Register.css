@@ -1,0 +1,131 @@
+.register-divider-container {
+  display: flex;
+  height: 100%;
+}
+
+.register-left-container {
+  width: 50%;
+  height: 100vh;
+  background-color: #ff6b00;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.register-spinradio-title {
+  margin-top: 2rem;
+}
+
+.register-left-container img {
+  width: 80%;
+  margin-top: 10rem;
+  margin-bottom: 3rem;
+}
+
+.register-right-container {
+  width: 50%;
+  height: 100vh;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.register-title {
+  margin-top: 2rem;
+  margin-bottom: 5rem;
+}
+
+.input-form-register {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 60%;
+}
+
+.input-form-register input {
+  border: none;
+  outline: none;
+  height: 50px;
+  font-size: 1.2rem;
+  padding-left: 1rem;
+  background-color: #0d0b0b;
+  border-radius: 5px;
+  color: white;
+}
+
+.input-form-register button {
+  padding: 10px 20px;
+  margin: 0 0 1.5rem auto;
+  border: none;
+  outline: none;
+  background-color: #ff6b00;
+  font-size: 1.2rem;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.input-form-register button:hover {
+  background-color: #df5d00;
+}
+
+.link-login-register {
+  color: white;
+  font-size: 1.3rem;
+  transition: 0.5s;
+}
+
+.link-login-register:hover {
+  color: #ff6b00;
+}
+
+.alert-message {
+  margin-bottom: 1.3rem;
+  padding: 0.5rem 0;
+  width: 60%;
+  font-size: 1.3rem;
+  font-weight: bold;
+  background-color: rgba(255, 255, 255, 1);
+  opacity: 0.8;
+  border-radius: 5px;
+  display: grid;
+  place-items: center;
+  color: #ff6b00;
+}
+
+@media screen and (max-width: 1024px) {
+  .register-title {
+    margin-bottom: 2rem;
+  }
+  .register-right-container img {
+    margin-bottom: 2rem;
+  }
+  .link-register-register {
+    font-size: 1.2rem !important;
+  }
+}
+
+@media screen and (max-width: 968px) {
+  .register-left-container {
+    width: 0;
+    display: none;
+  }
+  .register-right-container {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .link-login-register {
+    font-size: 1.2rem !important;
+  }
+}
+
+@media screen and (max-width: 468px) {
+  .link-login-register {
+    font-size: 1.1rem !important;
+  }
+}
