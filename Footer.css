@@ -1,0 +1,11 @@
+.footer-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  margin-top: 2rem;
+}
+
+.footer-title {
+  margin: 1rem 0;
+}

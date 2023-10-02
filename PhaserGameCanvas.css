@@ -1,0 +1,23 @@
+.GameKHITittle {
+    color: chocolate;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 100px;
+}
+
+.GameKHI1{
+    justify-content: center;
+    margin-left: 520px;
+}
+
+@media screen and (max-width: 968px) {
+    .GameKHI1 {
+        margin-left: 80px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .GameKHI1 {
+        margin-left: 100px;
+    }
+}

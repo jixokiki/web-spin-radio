@@ -1,0 +1,156 @@
+.podcast-container {
+  margin: 0 auto;
+}
+
+.podcast-list {
+  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+  cursor: pointer;
+}
+
+.podcast-item img {
+  width: 100%;
+  transition: 0.25s all ease;
+}
+
+.podcast-item img:hover {
+  opacity: 0.9;
+  scale: 1.1;
+}
+
+.podcast-item {
+  /* background: #d9d9d9; */
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 30vh;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  transition: 0.5s;
+}
+
+/* .podcast-item:hover {
+  background-color: #797979;
+  color: white;
+} */
+
+.podcast-item p {
+  position: absolute;
+  bottom: 20px;
+}
+
+@media screen and (max-width: 1280px) {
+  .podcast-list {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media screen and (max-width: 968px) {
+  .podcast-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .podcast-item {
+    width: 100%;
+    height: 25vh;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .podcast-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .podcast-item {
+    width: 100%;
+    height: 30vh;
+  }
+}
+
+@media screen and (max-width: 468px) {
+  .podcast-list {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2rem;
+  }
+  .podcast-item img{
+    object-fit: contain;
+  }
+}
+
+/* .podcast-container {
+  margin: 0 auto;
+}
+
+.podcast-list {
+  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+  cursor: pointer;
+}
+
+.podcast-item img {
+  width: 100%;
+  transition: 0.25s all ease;
+}
+
+.podcast-item img:hover {
+  opacity: 0.9;
+  scale: 1.1;
+}
+
+.podcast-item {
+  background: #d9d9d9;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 30vh;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  transition: 0.5s;
+}
+
+.podcast-item:hover {
+  background-color: #797979;
+  color: white;
+}
+
+.podcast-item p {
+  position: absolute;
+  bottom: 20px;
+}
+
+@media screen and (max-width: 1280px) {
+  .podcast-list {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media screen and (max-width: 968px) {
+  .podcast-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .podcast-item {
+    width: 100%;
+    height: 25vh;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .podcast-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .podcast-item {
+    width: 100%;
+    height: 30vh;
+  }
+}
+
+@media screen and (max-width: 468px) {
+  .podcast-list {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2rem;
+  }
+} */

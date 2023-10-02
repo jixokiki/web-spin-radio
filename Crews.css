@@ -1,0 +1,56 @@
+/*  */
+
+.crews-container {
+  padding-top: 1rem;
+  padding-bottom: 3rem;
+}
+
+.crews-list {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.crews-items {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.crews-image {
+  width: 120px;
+  height: 120px;
+  background: #d9d9d9;
+  border-radius: 50%;
+  border: 5px solid #ff5a07;
+}
+
+.play {
+  color: #ff0707;
+  font-size: 3rem;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.play:hover {
+  font-size: 3.3rem;
+}
+
+.rotate {
+  transform: rotateY(180deg);
+}
+
+@media screen and (max-width: 968px) {
+  .crews-image {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+@media screen and (max-width: 468px) {
+  .crews-image {
+    width: 70px;
+    height: 70px;
+  }
+}

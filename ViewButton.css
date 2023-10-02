@@ -1,0 +1,41 @@
+.view-container {
+  margin: 2rem auto 2rem auto;
+  display: grid;
+  place-items: center;
+  background: #c32222;
+  width: 15%;
+  padding: 10px 15px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  transition: 0.2s;
+}
+
+.view-container:hover {
+  background: #b11818;
+}
+
+.view-container a {
+  color: white;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 968px) {
+  .view-container {
+    width: 20%;
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 730px) {
+  .view-container {
+    width: 30%;
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 468px) {
+  .view-container {
+    width: 40%;
+    font-size: 0.9rem;
+  }
+}

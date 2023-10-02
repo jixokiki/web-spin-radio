@@ -1,0 +1,159 @@
+/*  */
+
+/* .crews-container {
+    padding-top: 1rem;
+    padding-bottom: 3rem;
+  } */
+  
+  /* .crews-list {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  } */
+  
+  /* .crews-items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+  } */
+  
+  /* .crews-image {
+    width: 120px;
+    height: 120px;
+    background: #d9d9d9;
+    border-radius: 50%;
+    border: 5px solid #ff5a07;
+  } */
+  
+  /* .play {
+    color: #ff0707;
+    font-size: 3rem;
+    transition: 0.2s;
+    cursor: pointer;
+  } */
+  
+  /* .play:hover {
+    font-size: 3.3rem;
+  } */
+  
+  /* .rotate {
+    transform: rotateY(180deg);
+  } */
+
+
+/* CSS untuk membuat galeri gambar responsif, interaktif, dan di tengah */
+
+/* .bg-primary-1 {
+    background-color: #f0f0f0; Ganti warna latar belakang sesuai kebutuhan Anda
+    padding: 50px 0;
+  } */
+  
+  .crews-container-image {
+    text-align: center;
+  }
+  
+  .title-container-image {
+    font-size: 24px;
+    color: #0abcf7;
+    margin-bottom: 20px;
+  }
+  
+  .crews-list-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  
+  .playImage {
+    background-color: #3498db;
+    color: #fff;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    /* transform: translateY(-50%); */
+    margin-left: 545px;
+    z-index: 2;
+  }
+  
+  .playImage.rotate {
+    /* top: 265px; */
+    margin-left: -525px; /* Atur posisi ikon "Previous" */
+    transform: rotateY(180deg);
+  }
+  
+  .playImage:hover {
+    background-color: #1c87c9; /* Warna latar belakang saat hover */
+  }
+  
+  .crews-items-image {
+    position: relative;
+    overflow: hidden;
+    max-width: 100%;
+  }
+  
+  .crews-items-image img {
+    max-width: 70%;
+    height: auto;
+    display: block;
+    /* margin: 0 auto; Menengahkan gambar */
+    margin-left: 120px;
+    transition: transform 0.3s;
+  }
+  
+  /* Membuat gambar menjadi responsif */
+  @media (max-width: 768px) {
+    .crews-items-image img {
+      width: 80%;
+      height: auto;
+      margin-left: 100px;
+    }
+    .playImage{
+        margin-left: 140px;
+    }
+    .playImage.rotate{
+        margin-left: -360px;
+    }
+  }
+
+  
+
+  @media screen and (max-width: 968px) {
+    /* .crews-image {
+      width: 100px;
+      height: 100px;
+    } */
+    .crews-items-image img {
+        width: 70%;
+        height: auto;
+        margin-left: 62px;
+      }
+      .playImage{
+          margin-left: 340px;
+      }
+  }
+  
+  @media screen and (max-width: 468px) {
+    /* .crews-image {
+      width: 70px;
+      height: 70px;
+    } */
+    .crews-items-image img {
+        width: 70%;
+        height: auto;
+        margin-left: 150px;
+      }
+      .playImage{
+          margin-left: 390px;
+      }
+  }
+  
